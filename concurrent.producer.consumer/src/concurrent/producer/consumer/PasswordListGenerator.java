@@ -8,7 +8,6 @@ public class PasswordListGenerator {
 
 	public PasswordListGenerator(List<String> inputPasswordList) {
 		this.inputPasswordList = inputPasswordList;
-		// TODO Auto-generated constructor stub
 	}
 
 	public List<String> getSelectedPasswordsList() {

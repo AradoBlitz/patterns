@@ -10,7 +10,6 @@ public class PasswordsHashMatcher {
 
 	public PasswordsHashMatcher(PasswordListGenerator passwordListGenerator) {
 		this.passwordListGenerator = passwordListGenerator;
-		// TODO Auto-generated constructor stub
 	}
 
 	public String find(String passwordshash) throws Exception {
