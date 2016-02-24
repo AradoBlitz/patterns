@@ -42,7 +42,7 @@ public class HashedPasswordHackerTest {
 		assertThat(md5(password),equalTo(passwordsHash));
 		//Сгенерировать список паролей для перебора на основе правильного перебора с помощью случайных перестановок
 		assertThat(shufl(password),is(not(equalTo(password))));
-		System.out.println(shufl(password));
+		
 	}
 	
 	 private String shufl(String password) {
@@ -54,7 +54,8 @@ public class HashedPasswordHackerTest {
 				char smb = buf[i];
 				buf[i] = buf[selected];
 				buf[selected]=smb;
-		}			
+		}	
+		System.out.println(buf);
 		return new String(buf);
 	}
 
